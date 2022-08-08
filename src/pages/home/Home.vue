@@ -2,7 +2,7 @@
   <div>
     <home-header></home-header>
     <home-swiper></home-swiper>
-    44
+    <div>text</div>
   </div>
 </template>
 
@@ -13,7 +13,8 @@ import HomeSwiper from "./components/Swiper.vue";
 export default {
   name: "Home",
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeSwiper
   }
 };
 </script>
