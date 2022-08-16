@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe632;</span>
     <span>输入城市/景点/游玩主题</span>
     </div>
-    <router-link to="/city" ><div class="header-right">
+    <router-link   to="/city" ><div class="header-right">
    {{this.city}}
    <!-- {{this.$store.state.city}} -->
       <span class="iconfont  arrow-incon">&#xe64a;</span>
