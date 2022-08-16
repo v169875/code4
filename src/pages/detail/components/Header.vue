@@ -41,12 +41,14 @@ export default {
         this.showAbs=true
        }
     }
-    }
-,
+    },
     activated () {
     window.addEventListener('scroll', this.handleScroll)
   },
-
+  //全局事件解绑
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
 }
 </script>
 <style lang="stylus"  scoped>
