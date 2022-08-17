@@ -20,7 +20,9 @@ export default new Router({
             path: '/detail/:id',
             name: 'Detail',
             component: Detail
-
         }
-    ]
+    ], // 打开新页面显示到顶部，不能受到上一页上下滚动的距离影响
+    scrollBehavior: function(to, from, savedPosition) {
+        return savedPosition || { x: 0, y: 0 }
+    }
 })
